@@ -1,0 +1,202 @@
+body{
+  magrin: 0;
+  background-image: url("../Images/7(1).jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-weight: 300;
+}
+
+/* Main Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Menu Bar */
+
+.Container{
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+header{
+  padding-top: 0;
+  background: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.Logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav{
+  float: right;
+}
+
+.Container nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Container nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+.Container nav a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.Container nav a:hover{
+  color: #750300;
+}
+
+.Container nav a:before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #750300;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.Container nav a:hover::before{
+  width: 100%;
+}
+
+/* Grid Container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". About-Me About-Me About-Me About-Me ." ". Personal-Info Personal-Info Personal-Info2 Personal-Info2 ." ". Experience Experience Experience Experience .";
+}
+/* About Me */
+
+.About-Me {
+  grid-area: About-Me;
+  align-content: center;
+  background-color: #000000;
+}
+
+.My-Image img{
+  display: block;
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: 20px auto;
+}
+
+.About-Me h1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: #fff;
+}
+
+.About-Me p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin: 50px;
+}
+
+/* Personal Info */
+
+.Personal-Info {
+  grid-area: Personal-Info;
+  background-color: #000000
+}
+
+.Personal-Info .Contact-Info h1{
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.Contact-Info ul li a iframe{
+  align-self:center;
+}
+
+.Map{
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background: #000;
+}
+
+
+
+/* Personal Info 2 */
+
+.Personal-Info2 {
+  grid-area: Personal-Info2;
+  background-color: #000000;
+}
+
+.Personal-Info2 ul a{
+  display: inline-block;
+  margin: 2px;
+}
+
+.Personal-Info2 img{
+  position: relative;
+  top: 200px;
+  right: 440px;
+  width: 100px;
+}
+
+.Personal-Info2 h1{
+  position: relative;
+  top: 420px;
+  left: 100px;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* Experience */
+
+.Experience {
+  grid-area: Experience;
+  background-color: #000000
+}
+
+.Experience nav h1{
+  position: absolute;
+  right: 890px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.Experience nav img{
+  position: relative;
+  right: 550px;
+  margin: 20px;
+}

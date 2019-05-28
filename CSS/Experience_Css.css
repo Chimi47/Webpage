@@ -1,0 +1,185 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Immortal Immortal Immortal Immortal" "RogueTitan RogueTitan RogueTitan RogueTitan" "StageClear StageClear StageClear StageClear";
+}
+body{
+
+}
+
+.Container{
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+header{
+  padding-top: 0;
+  background: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.Logo {
+  float: left;
+  padding: 10px 0;
+}
+
+.Container nav{
+  float: right;
+}
+
+.Container nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.Container nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+.Container nav a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.Container nav a:hover{
+  color: #750300;
+}
+
+.Container nav a:before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #750300;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.Container nav a:hover::before{
+  width: 100%;
+}
+
+.Immortal {
+  text-align: center;
+  grid-area: Immortal;
+  padding: 235px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../Images/DWHaN_3X0AETHkT.jpg large.jpg");
+  background-color: #000000;
+}
+
+.Immortal h1{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.Immortal p{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.Immortal a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.RogueTitan {
+  grid-area: RogueTitan;
+  padding: 235px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../Images/9b64e43d6fdcb15ab751546476b23097_original.png");
+  background-color: #000000;
+}
+
+.RogueTitan iframe{
+  position: relative;
+  left: 650px;
+  top: 150px;
+}
+
+.RogueTitan article{
+  position: relative;
+  top: 150px;
+}
+
+.RogueTitan h1{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.RogueTitan p{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.RogueTitan a{
+  text-decoration: none;
+  left: 650px;
+  position: relative;
+  top: 150px;
+  color: #fff;
+}
+
+.StageClear {
+  grid-area: StageClear;
+  padding: 235px 0;
+  position: relative;
+  background-color: #000000;
+}
+
+.StageClear article{
+  position: relative;
+}
+
+.StageClear h1{
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+
+.StageClear p{
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.StageClear a{
+  text-decoration: none;
+  object-fit: cover;
+  left: 450px;
+  position: relative;
+  color: #fff;
+}
+
+.StageClear a img{
+  object-fit: cover;
+  width: 1000px;
+
+}
